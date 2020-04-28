@@ -1,14 +1,16 @@
+```python
 def main(*msg):
+    temp = []
     from random import randint
     def linha():
         print('~~~'*15)
     linha()
     print('        Forca')
     linha()
-    if len(msg) == 1:
+    if type(msg) == str:
         palavra = msg
     else:
-        palavra = msg[randint(1, len(msg))]
+        palavra = (msg[randint(0, len(msg)) - 1]).upper()
     contador = 0
     lista = []
     erros = []
@@ -39,3 +41,5 @@ def main(*msg):
 
     print(f'PARABÉNS! A palavra era {palavra}. Você teve {contador} erro(s).')
     linha()
+```
+

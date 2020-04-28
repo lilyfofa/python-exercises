@@ -1,3 +1,0 @@
-# python-exercises
-...
-Why are you reading me?
